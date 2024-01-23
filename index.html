@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  
+  <h1>GRADUATE FORM</h1>
+  <fieldset>
+ <legend><header>PERSONAL DETAILS</header></legend>
+<div class="container">
+  <div class="details">
+  NAME: <br><input type="text"  id="fname" placeholder="NAME"><br>
+  SURNAME:<br><input type="email"  id="Sname" placeholder="SURNAME"><br>
+  PHONE NUMBER:<br><input type="text" id="phonenumber" placeholder="PHONENUMBER"><br>
+  EMPLOYEMENT STATUS:<br><input type="radio" value="Employed" name="employement type" onclick="choose(this.value)" >
+  <label for="employementType">EMPLOYED</label> <br>
+  <br><input type="radio" value="UNEMPLOYED" name="employement type" onclick="choose(this.value)" >
+  <label for="employementType">UNEMPLOYED</label> <br>
+  
+</div>
+<div class="details2">
+  EMAIL:<br> <input type="text"  id="email" placeholder="EMAIL"><br>
+  ADDRESS:<br><input type="address"  id="address" placeholder="ADDRESS"><br>
+  AGE:<br><input type="text" id="AGE" placeholder="AGE"><br>
+  DATE OF BIRTH:<br><input type="date" id="DateOFBirth" placeholder="DATE OF BIRTH"><br>
+  GENDER:<br><input type="radio" name="female" value="female"  onclick="choose(this.value)">
+  <label for="GENDER">FEMALE</label> <br>
+  <br><input type="radio" name="male" value="male" onclick="choose(this.value)" >
+  <label for="GENDER">MALE</label> <br>
+</div>
+</div>
+</fieldset>
+<fieldset>
+<legend><header>EDUCATION DETAILS</header></legend>
+<div class="container2">
+  <div class="details3">
+  STUDENT NUMBER: <br><input type="text"  id="StudentNumber" placeholder="STUDENT NUMBER"><br>
+  NAME OF THE QUALIFICATION:<br><input type="text"  id="NameOfQualification" placeholder="NAME OF THE QUALIFICATION"><br>
+  </div>
+  <div class="details4">
+    NAME OF THE INSUTITION:<br>
+    <select id="unversity" name="unversity">
+      <option  value=""></option>
+     <option  value="DURBAN UNIVERSITY OF TECHNOLOGY"> DURBAN UNIVERSITY OF TECHNOLOGY</option>
+     <option  value=" UNIVERSITY OF KWAZULU-NATAL"> UNIVERSITY OF KWAZULU-NATAL</option>
+     <option  value="UNIVERSITY OF ZULULAND"> UNIVERSITY OF ZULULAND</option>
+
+
+    </select><br>
+
+
+    YEAR OF COMPLITION :<br><input type="date"  id="year" placeholder="YEAR OF COMPLITION"><br>  
+  </div>
+</div>
+</fieldset>
+<br>
+  <button onclick="resurt()">submit</button>
+<script src="./res/index.js"></script>
+</body>
+</html>
